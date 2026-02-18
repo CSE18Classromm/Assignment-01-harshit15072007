@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking</title>
+</head>
+<body bgcolor="#f2f2f2">
+
+    <h2 align="center">Hotel Room Booking Form</h2>
+
+    <form>
+        <table border="1" align="center" cellpadding="10" cellspacing="0" width="50%" bgcolor="white">
+            
+            <tr>
+                <th colspan="2">Guest Information</th>
+            </tr>
+
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Booking Details</th>
+            </tr>
+
+            <tr>
+                <td>Check-in Date</td>
+                <td><input type="date" name="checkin"></td>
+            </tr>
+
+            <tr>
+                <td>Check-out Date</td>
+                <td><input type="date" name="checkout"></td>
+            </tr>
+
+            <tr>
+                <td>Room Type</td>
+                <td>
+                    <select name="roomtype">
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="suite">Suite</option>
+                        <option value="deluxe">Deluxe Room</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Number of Guests</td>
+                <td><input type="number" name="guests" min="1" max="10"></td>
+            </tr>
+
+            <tr>
+                <td>Additional Requests</td>
+                <td><textarea name="requests" rows="4" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Book Now">
+                    <input type="reset" value="Clear Form">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
